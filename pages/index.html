@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+
+<!-- Language Attr! -->
+<html lang="en-US">
+
+<head>
+
+    <!-- Meta Tags! -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Icon Bar! -->
+    <title>Curado Demo - Main Index Page</title>
+
+    <!-- Bootstrap5 CSS Link! -->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+
+    <!-- Default Header CSS Link!-->
+    <link rel="stylesheet" href="/styles/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION! -->
+    <header>
+
+        <!-- Navigational Bar! -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                
+                <!-- Brand / logo! -->
+                <a class="navbar-brand text-uppercase" href="#">Curado</a>
+
+                <!-- Hamburger Menu Button! -->
+                <div class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="bar"></div>                        
+                </div>
+
+                <!-- Navigational Section! -->
+                <div class="collapse navbar-collapse" id="toggleNavBar">
+
+                    <!-- Navigational Links! -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ms-auto">
+
+                        <!-- Home Link! -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <!-- Service Link! -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+
+                        <!-- Consultation Link! -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#consultation">Consultations</a>
+                        </li>
+
+                        <!-- Article Links! -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles">Articles</a>
+                        </li>
+
+                        <!-- Question & Answer Link! -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">Question & Answer</a>
+                        </li>                           
+                    </ul>
+
+                    <!-- Log in Section -->
+                    <form class="d-flex">
+                        <button id="open" class="btn btn-success text-uppercase fs-5" type="submit">Log in</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Horizontal Line! -->
+        <hr class="mt-0 mb-0 container d-none d-lg-block">
+
+        <!-- Log in Modal Page!-->
+        <div id="modal" class="modal">
+
+            <!-- Modal Content! -->
+            <form class="modal-content animate" id="form">
+
+                <!-- Close Button! -->
+                <span class="close" title="Close Modal">&times;</span>
+
+                <!-- Avatar Img Container! -->
+                <div class="imgcontainer">
+                    <img src="/designs/profile.png" class="avatar">
+                </div>
+
+                <!-- Input Sub-section! -->
+                <div class="form-container">
+                    
+                    <!-- Username! -->
+                    <input type="text" placeholder="Enter your username" name="uname" required>
+
+                    <!-- Password! -->
+                    <input type="password" placeholder="Enter your password" name="psw" class="mt-3" required>
+
+                    <!-- Remember Me! -->
+                    <label class="text-dark mt-3">
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+
+                    <!-- Line Break! -->
+                    <br>
+
+                    <!-- Modal Box (Log in) Button Container! -->
+                    <div class="mt-3">
+
+                        <!-- Modal Log in Button! -->
+                        <button class="btn btn-success btn-sm me-3" type="submit">Log in</button>
+
+                        <!-- Modal Cancel Button! -->
+                        <button type="button" class="cancelbtn btn btn-danger btn-sm">Cancel</button>
+                    </div>
+                        
+                </div>
+
+                <!-- Modal Box Footer Container! -->
+                <div class="container mb-3">
+
+                    <!-- Sign in! -->
+                    <span>
+                        <a href="#" class="text-underline login-bottom">Sign up with us</a>
+                    </span>
+
+                    <!-- Forgot Password! -->
+                    <span class="text-dark float-end">
+                        Forgot <a href="#" class="text-underline login-bottom">password?</a>
+                    </span>
+                </div>
+
+            </form>
+
+        </div>
+        
+        <!-- Heading & Info Display Carousel! -->
+        <div class="heading mt-5 text-light">
+
+            <!-- Carousel (setInterval == 2mins)! -->
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Display 1! -->
+                    <div class="carousel-item active" data-bs-interval="20000">
+
+                        <!-- Image Slide! -->
+                        <img src="/images/slide3.png" class="d-block img-fluid float-end img-slide" alt="Image slide">
+
+                        <!-- Heading Display! -->
+                        <div class="carousel-caption d-block d-md-block">
+                            <div class="container-fluid">
+                                <div class="row justify-content-start text-start">
+                                    <div class="col-lg-7">
+
+                                        <!-- Video! -->
+                                        <h1>
+                                            Consult a doctor anytime, anywhere by <a href="#" class="text-underline text-info">video call</a>
+                                        </h1>
+
+                                        <!-- Sub-heading Display! -->
+                                        <p class="mt-3">Talk with a doctor using our highly secured <a href="#" class="text-info text-underline">HIPAA</a> complaint end-to-end encrypted video call.</p>
+
+                                        <!-- Call-to-action Consult Button! -->
+                                        <button type="button" class="carousel-btn">
+                                            <span></span>Consult one
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display 2! -->
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <div class="container">
+
+                            <!-- Image Slide! -->
+                            <img src="/images/slide1.png" class="d-block img-fluid float-end img-slide" alt="Image slide">
+
+                            <!-- Heading Display! -->
+                            <div class="carousel-caption d-block d-md-block">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-start text-start">
+                                        <div class="col-lg-7">
+
+                                            <!-- Covid-19! -->
+                                            <h1>
+                                                Are there any long term health consequences with the <a href="#" class="text-underline text-info text-uppercase">covid-19</a> vaccines?
+                                            </h1>
+
+                                            <!-- Sub-heading Display! -->
+                                            <p class="mt-3">Why not you stay tuned, stay informed and stay updated in our daily health awareness <a href="#" class="text-info text-underline">articles</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display 3! -->
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <div class="container">
+
+                            <!-- Image Slide! -->
+                            <img src="/images/slide2.png" class="d-block img-fluid float-end img-slide" alt="Image slide">
+
+                            <!-- Heading Display! -->
+                            <div class="carousel-caption set d-block d-md-block">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-start text-start">
+                                        <div class="col-lg-7">
+
+                                            <!-- Diabetes! -->
+                                            <h1>
+                                                What's your <a href="#" class="text-underline text-info text-uppercase">diabetes</a> risk?
+                                            </h1>
+
+                                            <!-- Sub-heading Display! -->
+                                            <p class="mt-3">According to <a href="#" class="text-underline text-info text-uppercase">World Health Organisation</a>, more than 422 million people worldwide have <a href="#" class="text-underline text-info text-uppercase">diabetes</a>, and 1.6 million deaths are directly attributed to <a href="#" class="text-underline text-info text-uppercase">diabetes</a> each year.</p>
+                                            <p class="mt-2">Find out your risk by taking our online free assessment</p>
+
+                                            <!-- Call-to-action Assessment Button! -->
+                                            <button type="button" class="carousel-btn">
+                                                <span></span>Take one
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Wavy Image Design! -->
+        <img src="/designs/wavy.svg" alt="Wavy image design" class="bottom-img d-none d-md-block">
+
+    </header>
+    <!-- END OF HEADER SECTION! -->
+
+
+    <main>
+
+        <!-- SERVICE SECTION! -->
+        <section id="services" class="text-dark pt-0 pb-5">
+
+            <!-- The Service Container! -->
+            <div class="container">
+
+                <!-- Title! -->
+                <h2 class="text-center text-capitalize pt-5 title">
+                    Why you should trust us? <br> Get to know about our services
+                </h2>
+
+                <!-- Service Cards! -->
+                <div class="row">
+                    
+                    <!-- Col 1! -->
+                    <div class="col-lg-3 mt-5">
+
+                        <!-- Card 1! -->
+                        <div class="card card-box text-center h-100">
+
+                            <!-- Image Icon! -->
+                            <img src="/designs/doctor.png" class="card-img-top mt-3 mx-auto" alt="Doctor Icon Image">
+
+                            <!-- Specialties! -->
+                            <div class="card-body">
+                                <h5 class="card-title">All Specialist</h5>
+                                <p class="card-text text-muted">You can reach out to 3500+ doctors from 80+ specialties, who are experienced in <span title="the remote diagnosis and treatment of patients by means of telecommunications technology." class="text-success">telemedicine</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Col 2! -->
+                    <div class="col-lg-3 mt-5">
+
+                        <!-- Card 2! -->
+                        <div class="card card-box text-center h-100">
+
+                            <!-- Image Icon! -->
+                            <img src="/designs/secure.png" class="card-img-top mt-3 mx-auto" alt="Secure Icon Image">
+
+                            <!-- Private & Secure! -->
+                            <div class="card-body">
+                                <h5 class="card-title">Private & Secure</h5>
+                                <p class="card-text text-muted">Every doctor here is under the <span title="a legal concept related to medical confidentiality, that protects communications between a patient and their doctor from being used against the patient in court." class="text-success">Doctor - Patient Confidentiality Contract.</span> And all your data is protected & safeguarded</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Col 3! -->
+                    <div class="col-lg-3 mt-5">
+
+                        <!-- card 3! -->
+                        <div class="card card-box text-center h-100">
+
+                            <!-- Image Icon! -->
+                            <img src="/designs/team.png" class="card-img-top mt-3 mx-auto" alt="Users Icon Image">
+
+                            <!-- Patients! -->
+                            <div class="card-body">
+                                <h5 class="card-title">Million Patients</h5>
+                                <p class="card-text text-muted">Trusted by millions and serving patients worldwide. Patients from 196 countries and counting</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Col 4! -->
+                    <div class="col-lg-3 mt-5">
+
+                        <!-- Card 4! -->
+                        <div class="card card-box text-center h-100">
+
+                            <!-- Image Icon! -->
+                            <img src="/designs/chat.png" class="card-img-top mt-3 mx-auto" alt="Chat Icon Image">
+
+                            <!-- Chatbot Support! -->
+                            <div class="card-body">
+                                <h5 class="card-title">Chatbot Support</h5>
+                                <p class="card-text text-muted">Get access to any of our doctors via chat for a fantastic telehealth service. Contact via telegram & whatsapp</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Service Images (Only visible for XLG - LG)! -->
+                <div class="container-fluid d-none d-lg-block">
+
+                    <!-- First Row! -->
+                    <div class="row mt-5">
+
+                        <!-- Col 1! -->
+                        <div class="col-lg-6 mt-3">
+
+                            <!-- Chat! -->
+                            <div class="chat-img-container">
+                                <img src="/images/chat-img.png">
+                                <div class="chat-img-overlay"></div>
+                                <div class="chat-img-desc">
+                                    <h3>Chat with a Doctor</h3>
+                                    <hr>
+                                    <p>Going to the doctor isn’t most people’s favorite activity, but it's part of staying healthy. So you may as well get the most out of it.</p>
+                                    <p>Post unlimited follow-ups to YOUR doctor easily using our comprehensive online chatting app available both in Andriod & iOS.</p>                                
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mt-3">
+
+                            <!-- Foreign! -->
+                            <div class="chat-img-container">
+                                <img src="/images/foreign-doc.png">
+                                <div class="chat-img-overlay"></div>
+                                <di class="chat-img-desc">
+                                    <h3>Have a foreign doctor of your choice</h3>
+                                    <hr>
+                                    <p>Have a foreign doctor of your choice for a life time services anytime & anywhere.</p>
+                                    <p>Also get an unlimited video call services from any doctor of your chioce in any our medical specialties.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row! -->
+                    <div class="row">
+
+                        <div class="col-lg-6 mt-3">
+        
+                            <!-- Mentor! -->
+                            <div class="chat-img-container">
+                                <img src="/images/mentor.png">
+                                <div class="chat-img-overlay"></div>
+                                <div class="chat-img-desc">
+                                    <h3>Get a Healthcare Mentor</h3>
+                                    <hr>
+                                    <p>It is an empowering way to engage support and work towards more positive mental health, identifying solutions that are right for you, and you alone.</p>
+                                    <p>Get a doctor to listen to you, relate with you, support and advice you in any health related issues.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mt-3">
+                            <!-- Check-ups! -->
+                            <div class="chat-img-container">
+                                <img src="/images/med-img-info.png">
+                                <div class="chat-img-overlay"></div>
+                                <div class="chat-img-desc">
+                                    <h3>A life time daily check-ups</h3>
+                                    <hr>
+                                    <p>Having a lifetime doctor that continously check-up on you including, your weekly and monthly diabetes diagnosis tests.</p>
+                                    <p>Also get an updated medical information not limited to your country only, but all over the world in general.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <!-- Service Lists (Only visible for MD - SM)! -->
+                <div class="d-block d-lg-none mt-5">
+
+                    <!-- Service Highlight Title! -->
+                        <h3>Start an online chat consultation <br> with a doctor</h3>
+
+                        <!-- Listed Service Highlights with Icons! -->
+                        <ul class="service-list text-muted">
+
+                            <!-- List 1! -->
+                            <li>
+                                <img src="/images/protection-shield-with-a-check-mark.png" alt="Checkmark Icon" class="img-fluid checkmark-icon">Have a foreign doctor of your choice for a life time services anytime & anywhere
+                            </li>
+
+                            <!-- List 2! -->
+                            <li>
+                                <img src="/images/protection-shield-with-a-check-mark.png" alt="Checkmark Icon" class="img-fluid checkmark-icon">Unlimited video call services from any doctor of your chioce
+                            </li>
+
+                            <!-- List 3! -->
+                            <li>
+                                <img src="/images/protection-shield-with-a-check-mark.png" alt="Checkmark Icon" class="img-fluid checkmark-icon">A life time daily check-ups including, our weekly and monthly diabetes diagnosis tests
+                            </li>
+
+                            <!-- List 4! -->
+                            <li>
+                                <img src="/images/protection-shield-with-a-check-mark.png" alt="Checkmark Icon" class="img-fluid checkmark-icon">Get an updated medical information not limited to your country only, but all over the world in general
+                            </li>
+
+                        </ul>
+
+                        <!-- The Follow-up Service Texts! -->
+                        <p class="lead">Post unlimited follow-ups to YOUR doctor easily using our comprehensive online chatting app available both in Andriod & iOS</p>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <!-- Query Col! -->
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="comm" id="query">
+                                    <label class="form-check-label" for="query">
+                                        Query
+                                    </label>
+                                </div>
+
+                                <!-- Phone Col! -->
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="comm" id="phone" checked>
+                                    <label class="form-check-label" for="phone">
+                                        Phone
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <!-- Chat Col! -->
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="comm" id="chat" checked>
+                                    <label class="form-check-label" for="chat">
+                                        Chat
+                                    </label>
+                                </div>
+
+                                <!-- Video Col! -->
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="comm" id="video">
+                                    <label class="form-check-label" for="video">
+                                        Video
+                                    </label>
+                                </div>  
+                                
+                            </div>
+
+                        </div>  
+                </div>
+
+            </div>
+        </section>
+        <!-- END OF SERVICE SECTION! -->
+
+        <!-- CONSULTATION SECTION! -->
+        <section id="consultation" class="py-5">
+            
+            <!-- Consultation Animated Background! -->
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+            
+            <!-- The Specialties Container! -->
+            <div class="container">
+
+                <!-- Title! -->
+                <h2 class="text-center text-light text-capitalize title">
+                    Our Consulting Specialties
+                </h2>
+
+                <!-- Sub-title! -->
+                <p class="text-light text-center w-60 mx-auto mb-0 sub-title">
+                    Ask a doctor online and get quick medical advice for your health queries. Our medical panel consists of over 2500+ doctors from over 55+ specialties.
+                </p>
+                
+                <!-- Specialties Carousel (Only visible for XLG - LG)! -->
+                <div id="specialties" class="carousel slide mt-0 d-none d-lg-block" data-bs-ride="carousel">
+
+                    <!-- The Indicator Buttons! -->
+                    <div class="carousel-indicators icon-indicators">
+                        <button type="button" data-bs-target="#specialties" data-bs-slide-to="0" class="active dot-btn" aria-current="true" aria-label="Slide 1"></button>
+
+                        <button type="button" data-bs-target="#specialties" data-bs-slide-to="1" class="dot-btn" aria-label="Slide 2"></button>
+
+                        <button type="button" data-bs-target="#specialties" data-bs-slide-to="2" class="dot-btn" aria-label="Slide 3"></button>
+
+                        <button type="button" data-bs-target="#specialties" data-bs-slide-to="3" class="dot-btn" aria-label="Slide 4"></button>
+
+                        <button type="button" data-bs-target="#specialties" data-bs-slide-to="4" class="dot-btn" aria-label="Slide 5"></button>
+                    </div>
+
+                    <!-- Main Carousel! -->
+                    <div class="carousel-inner">
+
+                        <!-- First Slide! -->
+                        <div class="carousel-item active">
+
+                            <!-- First Row! -->
+                            <div class="row">
+
+                                <!-- Allergists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/allergy.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Allergy</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Anesthesiologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/anesthestic.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Anesthesiology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cardiologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/heart.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Cardiology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rectal Surgeons! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/renal.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Rectal Surgeon</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Critical Care! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/icu.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Critical Care</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dermatologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/dermatology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Dermatology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Second Row! -->
+                            <div class="row mt-3">
+
+                                <!-- Nutritionist! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/nutrition.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Nutrition</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Laboratory Medicine! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/lab.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Laboratory</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bariatric Surgery! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/bariatic.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Bariatric Surgery</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Neuro Modulators! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/neuro-mod.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Neuro Modulators</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Obstetricians! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/obstetrician.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Obstetrics</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Neonatologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/neonatology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Neonatology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Second Slide! -->
+                        <div class="carousel-item">
+
+                            <!-- First Row! -->
+                            <div class="row">
+
+                                <!-- Endocrinologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/endo.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Endocrinology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Family Physicians! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/family.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Family Physician</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Gastroenterologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/gastro.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Gastroenterology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Geriatric Medicine! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/geriatic.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Geriatric Medicine</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Hematologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/hema.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Hematology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Palliatives! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/palliatives.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Palliatives</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Second Row! -->
+                            <div class="row mt-3">
+
+                                <!-- Infectious Disease! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/infestious.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Infectious Disease</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Internists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/internist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Internal</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Geneticists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/genetics.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Genetics</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Nephrologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/nephro.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Nephrology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Neurologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/neuro.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Neurology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Gynecologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/gynecologist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Gynecology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <!-- Third Slide! -->
+                        <div class="carousel-item">
+
+                            <!-- First Row! -->
+                            <div class="row">
+
+                                <!-- Physiatrists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/physiatrist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Physiatry</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Plastic Surgeons! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/plastic.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Plastic Surgeon</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Podiatrists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/podiatrist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Podiatry</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Preventives! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/preventives.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Preventives</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Psychiatrists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/psychiatrist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Psychiatry</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pulmonologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/pulmonology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Pulmonology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Second Row! -->
+                            <div class="row mt-3">
+
+                                <!-- Radiologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/radiology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Radiology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rheumatologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/rheumatism.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Rheumatology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sleep Specialists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/sleep.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Sleep Care</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sports Specialists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/sport.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Sports Care</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Urologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/urologist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Urology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- General Surgeons! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/general.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">General Surgeon</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <!-- Fourth Slide! -->
+                        <div class="carousel-item">
+
+                            <!-- First Row! -->
+                            <div class="row">
+
+                                <!-- Dentist! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/dentist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Dentistry</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Embryologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/embryo.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Embryology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pharmacologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/pharmacy.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Pharmacology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Epidemiologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/epidermology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Epidemiology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Biochemists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/biochemist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Biochemist</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Histopathologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/histo.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Histopathology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Second Row! -->
+                            <div class="row mt-3">
+
+                                <!-- Oncologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/oncology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Oncologists</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ophthalmologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/ophthal.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Ophthalmology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Osteopaths! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/osteopath.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Osteopaths</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Otolaryngologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/otolaryn.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Otolaryngology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pathologists! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/pathology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Pathology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pediatricians! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/pediatrics.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Pediatric</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <!-- Fifth Slide! -->
+                        <div class="carousel-item">
+
+                            <!-- First Row! -->
+                            <div class="row">
+
+                                <!-- Renal Transplants! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/renal-trans.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Renal Transplants</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pains! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/pain.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Pains</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Addictions! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/addicts.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Addictions</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Toxicologist! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/toxi.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Toxicology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Immunopathology! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/immunology.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Immunopathology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Reproductions! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/reproduce.png" alt="" class="img-fluid">
+                                            <a class="specialties">Reproductions</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Second Row! -->
+                            <div class="row mt-3">
+
+                                <!-- Proctologist! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/proctologist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Proctology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dietetics! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/die.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Dietetics</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Vascular! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/vascular.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Vascular</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Hepatologist! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/hepatologist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Hepatology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Orthopedics! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/ortho.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Orthopedic</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Venereologist! -->
+                                <div class="col-lg-2 mt-2">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <img src="/icons/venereologist.png" alt="Health Icon" class="img-fluid">
+                                            <a href="#" class="specialties">Venereology</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Specialties Table (Only visible for MD - SM)! -->
+                <div class="container-fluid d-block d-lg-none">
+                    <table class="table table-bordered mx-auto">
+                        <thead>
+                            <tr>
+                                <th colspan="4" class="text-center text-light">List of our Medical Specialties</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="specialties">Allergy</a></td>
+                                <td><a href="#" class="specialties">Anesthesiology</a></td>
+                                <td><a href="#" class="specialties">Cardiology</a></td>
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Nutrition</a></td>
+                                <td><a href="#" class="specialties">Laboratory</a></td>
+                                <td><a href="#" class="specialties">Bariatric Surgery</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Rectal Surgeon</a></td>
+                                <td><a href="#" class="specialties">Critical Care</a></td>
+                                <td><a href="#" class="specialties">Dermatology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Neuro Modulators</a></td>
+                                <td><a href="#" class="specialties">Obstetrics</a></td>
+                                <td><a href="#" class="specialties">Neonatology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Endocrinology</a></td>
+                                <td><a href="#" class="specialties">Family Physician</a></td>
+                                <td><a href="#" class="specialties">Gastroenterology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Geriatric Medicine</a></td>
+                                <td><a href="#" class="specialties">Hematology</a></td>
+                                <td><a href="#" class="specialties">Palliatives</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Infectious Disease</a></td>
+                                <td><a href="#" class="specialties">Internal</a></td>
+                                <td><a href="#" class="specialties">Genetics</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Nephrology</a></td>
+                                <td><a href="#" class="specialties">Neurology</a></td>
+                                <td><a href="#" class="specialties">Gynecology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Physiatry</a></td>
+                                <td><a href="#" class="specialties">Plastic Surgeon</a></td>
+                                <td><a href="#" class="specialties">Podiatry</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Preventives</a></td>
+                                <td><a href="#" class="specialties">Psychiatry</a></td>
+                                <td><a href="#" class="specialties">Pulmonology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Radiology</a></td>
+                                <td><a href="#" class="specialties">Rheumatology</a></td>
+                                <td><a href="#" class="specialties">Sleep Care</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Sports Care</a></td>
+                                <td><a href="#" class="specialties">Urology</a></td>
+                                <td><a href="#" class="specialties">General Surgeon</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Dentistry</a></td>
+                                <td><a href="#" class="specialties">Embryology</a></td>
+                                <td><a href="#" class="specialties">Pharmacology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Epidemiology</a></td>
+                                <td><a href="#" class="specialties">Biochemist</a></td>
+                                <td><a href="#" class="specialties">Histopathology</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Oncologists</a></td>
+                                <td><a href="#" class="specialties">Ophthalmology</a></td>
+                                <td><a href="#" class="specialties">Osteopaths</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Otolaryngology</a></td>
+                                <td><a href="#" class="specialties">Pathology</a></td>
+                                <td><a href="#" class="specialties">Pediatric</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Renal Transplants</a></td>
+                                <td><a href="#" class="specialties">Pains</a></td>
+                                <td><a href="#" class="specialties">Addictions</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Toxicology</a></td>
+                                <td><a href="#" class="specialties">Immunopathology</a></td>
+                                <td><a href="#" class="specialties">Reproductions</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Proctology</a></td>
+                                <td><a href="#" class="specialties">Dietetics</a></td>
+                                <td><a href="#" class="specialties">Vascular</a></td>                    
+                            </tr>
+                            <tr>                   
+                                <td><a href="#" class="specialties">Hepatology</a></td>
+                                <td><a href="#" class="specialties">Orthopedic</a></td>
+                                <td><a href="#" class="specialties">Venereology</a></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+
+        </section>
+        <!-- END OF CONSULTATION SECTION! -->
+
+        <!-- ARTICLES SECTION! -->
+        <section id="articles" class="text-dark py-5">
+
+            <div class="container">
+
+                <!-- Title! -->
+                <h2 class="text-center text-capitalize title mt-5">
+                    Our Recent Articles
+                </h2>
+
+                <!-- Sub-title! -->
+                <p class="text-center w-50 mx-auto mb-0 sub-title">
+                    Meet our editorial team, who work every day to provide a balanced and accurate account of the latest developments in the medical and healthcare departments 
+                </p>
+
+                <!-- Article Categories! -->
+                <div class="article-container">
+
+                    <!-- Horinzontal Rule! -->
+                    <hr class="article-hr">
+
+                    <!-- Filter Button Selections! -->
+                    <div id="myBtnContainer" class="mt-3">
+                        <button class="btn btn-sm filter-btn inherit" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn btn-sm filter-btn" onclick="filterSelection('daily')">Daily</button>
+                        <button class="btn btn-sm filter-btn" onclick="filterSelection('weekly')">Weekly</button>
+                        <button class="btn btn-sm filter-btn" onclick="filterSelection('monthly')">Monthly</button>
+                        <button class="btn btn-sm">See article archives</button>
+                    </div>
+
+
+                    <!-- Article Gallery Grid! -->
+                    <div class="row">
+
+
+                        <!-- Daily Article Column! -->
+                        <div class="column daily">
+                            <div class="content">
+                                <img src="/articles-images/art-1.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>Why is Water so Important for the Body?</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <div class="column daily">
+                            <div class="content">
+                                <img src="/articles-images/art-2.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>Antidepressants may lower risk of death, complications in people with diabetes and depression</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <div class="column daily">
+                            <div class="content">
+                                <img src="/articles-images/art-3.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>Insight into the impact of physical activity on sleep</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <div class="column daily">
+                            <div class="content">
+                                <img src="/articles-images/art-4.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>Component derived from turmeric essential oil</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+                
+                        <!-- Weekly Article Column! -->
+                        <div class="column weekly">
+                            <div class="content">
+                                <img src="/articles-images/art-5.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>3D printed implants could bring relief to knee osteoarthritis sufferers</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <div class="column weekly">
+                            <div class="content">
+                                <img src="/articles-images/art-6.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>What are Superbugs?</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <div class="column weekly">
+                            <div class="content">
+                                <img src="/articles-images/art-7.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>Vaccine hesitancy among young adults may stall efforts to achieve herd immunity</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <!-- Monthly Article Column! -->
+                        <div class="column monthly">
+                            <div class="content">
+                                <img src="/articles-images/art-8.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>A practical guide to critical parameters in acute care testing</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                        <div class="column monthly">
+                            <div class="content">
+                                <img src="/articles-images/art-9.png" class="img-fluid" alt="Healthcare Image">
+                                <h4>A specific nutritional approach for subjects with post-Covid Syndrome</h4>
+                                <button type="button" class="btn btn-sm">Read</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- END OF ARTICLES SECTION! -->
+
+        <!-- FAQ SECTION! -->
+        <section id="faq" class="text-dark">
+            <div class="container">
+                
+                <!-- Title! -->
+                <h2 class="text-center text-capitalize title">
+                    Frequently Asked Questions
+                </h2>
+
+                <!-- Sub-title! -->
+                <p class="text-center w-50 mx-auto mb-0 sub-title">
+                    A frequently asked questions (FAQs) forum is often used in articles, websites, email lists, and online forums where common questions tend to reoccur
+                </p>
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+
+                        <div class="accordion mt-5" id="FAQaccordionOne">
+                            
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapeOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is telemedicine?
+                                    </button>                                    
+                                </h3>
+                                <div id="collapeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                    <div class="accordion-body">
+                                        <p class="accordion-text">Telemedicine is a method of providing medicare care remotely, usually through a <a href="#" class="text-underline text-info">video chat</a>. Telemedicine offers a range of benefits for both patients and healthcare providers</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I start?
+                                    </button>                                    
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                    <div class="accordion-body">
+                                        <p class="accordion-text">You can start anytime, anywhere by simply <a href="#" class="text-underline text-info">signing up</a> and getting YOUR own preferred doctor in any <a href="#" class="text-underline text-info">medical specialty</a> of your chioce.</p>
+                                        <p class="accordion-text mt-0"><a href="#" class="text-underline text-info">Click here</a> to sign up with us, and start chatting with your doctor immediately.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How much does it cost to get a doctor?
+                                    </button>                                    
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                    <div class="accordion-body">
+                                        <p class="accordion-text">We simply have a one-time-payment policy. It means you only pay once for a life time medical services. The actual cost depends on which medical specialty you are seeking for assistance in. Please, do check out our <a href="#" class="text-underline text-info">medical specialties</a> and their respective <a href="#" class="text-underline text-info">doctors</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        
+                        <div class="accordion mt-5" id="FAQaccordionTwo">
+                            
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapeFive" aria-expanded="false" aria-controls="collapseFive">
+                                        How and where do I make my payment?
+                                    </button>                                    
+                                </h3>
+                                <div id="collapeFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                                    <div class="accordion-body">
+                                        <p class="accordion-text">After <a href="#" class="text-underline text-info">signing up</a>, you can check out our <a href="#" class="text-underline text-info">medical specialty services</a> to determine how much to pay for YOUR one-time-payment. From there, you will be directed to a platform to make the necessary payments. We also accept cryptocurrency as a means of payment. <a href="#" class="text-underline text-info">Click here</a> for a brief guidance on how to proceed</p>                                      
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Can I pay with a cryptocurrency?
+                                    </button>                                    
+                                </h3>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                                    <div class="accordion-body">
+                                        <p class="accordion-text">YES, you can. Due to the popularity of cryptocurrency, and our policy of maintaining a strict <a href="#" class="text-underline text-info">doctor - patient confidentiality</a>, we are happy to announce that we NOW accept cryptocurrency as a means of payment. However, we ONLY accept <a href="#" class="text-underline text-info">bitcoins</a> & <a href="#" class="text-underline text-info">ethereum</a> as means of crypto payment.</p>
+                                        <p class="accordion-text"><a href="#" class="text-underline text-info">Read</a> our brief essay on why cryptocurrency is the BEST means of payment for you. We also have PROFESSIONALS specialized in handling & guilding you through in each steps.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Do I pay everytime I need a medical assistance?
+                                    </button>                                    
+                                </h3>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+                                    <div class="accordion-body">
+                                        <p class="accordion-text">NO. You ONLY pay a one-time-payment for a lifetime services. Once you choose your doctor, you are required to make a payment ONCE. And yes, you can have your doctor for a lifetime. However, incase of any misfortune or inconviences, another doctor can be assigned to you temporarily until you choose another replacement. And NO, you WON'T make another payment. Choose your doctor <a href="#" class="text-underline text-info">here</a>, or check out our medical specialties to determine the healthcare services you need.</p>
+                                        <p class="accordion-text"><strong>NOTE:</strong> you CANNOT switch specialties unless it is NECESSARY. However, you HAVE to make another payment for the NEW service. Please read our <a href="#" class="text-underline text-info">terms & conditions</a> to fully understand YOUR rights.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+        <!-- END OF FAQ SECTION! -->     
+
+    </main>
+
+    <!-- FOOTER SECTION! -->
+    <footer>
+
+        <!-- Wavy Image Design! -->
+        <img src="/designs/wave.svg" alt="Wavy image design" class="bottom-img d-none d-md-block">
+
+        <div class="container pt-0 pb-0">
+
+            <div class="row mb-0"">
+
+                <div class="col-lg-5">
+
+                    <!-- Brand / logo! -->
+                    <a class="navbar-brand text-uppercase" href="#">Curado</a>
+
+                    <!-- Slogan! -->
+                    <p class="slogan">A healthcare commitment to the community anytime, anyday, anywhere</p>
+
+                    <!-- Subscription Title! -->
+                    <h5 class="subscribe-title">Stay informed via our newsletter</h5>
+
+                    <!-- Newsletter Subscription Form! -->
+                    <form>
+
+                        <!-- Subscription Email Input! -->
+                        <input type="email" class="form-control subscribe-input" placeholder="Enter your email here">
+                        <p class="subscribe-text">* Subscribe to our newsletter to 
+                        receive early discount offers, updates and new AFRICAN HERBAL mixtures.</p>
+
+                        <!-- Subscription Button! -->
+                        <button type="submit" class="btn btn-success subscribe-btn">Subscribe</button>
+                    </form>
+
+                    <!-- Payment Gateway Platforms! -->
+                    <img src="/images/pay-gateways.png" alt="Payment Gateway Images" class="img-fluid payment-img mt-3">
+
+                    <hr class="d-none footer-link-hr">
+
+                </div>
+
+
+                <!-- First Link! -->
+                <div class="col-lg-2">
+                    
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Ask a doctor online</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Chat with a doctor</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Phone a doctor</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Video consultation</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Online COVID-19 care</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">COVID-19 tracker</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Physician directory</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Book a lab test</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">MRI/CT scan</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Aricles</a>
+                    </p>
+                    
+                    <hr class="d-none footer-link-hr">
+                </div>
+
+                <!-- Second Link! -->
+                <div class="col-lg-1">
+                    
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">FAQ</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Blogs</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Careers</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">About us</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Terms</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Privacy</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Ads policy</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Press</a>
+                    </p>
+                    
+                    <hr class="d-none footer-link-hr">
+                </div>
+
+                <!-- Third Link! -->
+                <div class="col-lg-2">
+                    
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Get Curado APP</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Medical review team</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Symptom checker</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Deeds & offers</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Sponsors</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Support</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Help</a>
+                    </p>
+
+                </div>
+
+                <!-- Fourth Link! -->
+                <div class="col-lg-2">
+                    
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">For employers</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">For telegram</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Technical team</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Success stories</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Medical cases</a>
+                    </p>
+
+                    <p class="footer-links">
+                        <a href="#" class="text-underline">Contact</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Horizontal Line! -->
+            <hr>
+
+            <!-- Copyrights! -->
+            <p class="copyright text-center"></p>
+
+        </div>
+
+        <!-- Scroll-to-the-top Button! -->
+        <button type="button" id="scrollToTopBtn" class="fw-6">TOP</button>
+
+    </footer>
+    <!-- END OF FOOTER SECTION! -->
+
+    <!-- Default JS SRC! -->
+    <script src="/scripts/script.js"></script>
+
+    <!-- Bootstrap5 JS SRC! -->
+    <script src="/scripts/bootstrap.bundle.js"></script>
+</body>
+
+</html>

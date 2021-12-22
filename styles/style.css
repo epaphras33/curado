@@ -1,0 +1,868 @@
+/*** The ROOT Section! ***/
+:root {
+    --main-color: #09203f;
+    --sec-color: #f3fbff;
+    --ter-color: #537895;
+    --white-color: #fdfff5;
+    --black-color: #222;
+    --gray-color: #b0b0b0;
+    --hover-color: #20c997;
+
+    --main-font: 'Ubuntu', sans-serif;
+    --sec-font: 'Roboto Condensed', sans-serif;
+    --font-weight: 700;
+
+
+    --height: 100%;
+    --width: 100%;
+
+    --radius: 50%;
+}
+/*** End of The ROOT Section! ***/
+
+
+
+/*** UNIVERSAL Section! ***/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-family: var(--main-font);
+
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+header {
+    overflow: hidden;
+
+    background-color: var(--main-color);
+}
+
+a {
+    color: var(--sec-color);
+
+    font-weight: 500;
+    font-family: var(--sec-font);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+hr {
+    border: 1px solid var(--white-color);
+}
+/*** End of UNIVERSAL Section! ***/
+
+
+
+/*** BRAND / LOGO Section! ***/
+.navbar .nav-brand a {
+    padding: 1rem 0;
+    display: block;
+}
+
+.navbar-brand {
+    font-family: var(--sec-font);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight);
+}
+/*** End of BRAND / LOGO Section! ***/
+
+
+
+/*** HAMBURGER Section! ***/
+header .hamburger {
+    height: 60px;
+    width: 60px;
+
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border: 3px solid var(--white-color);
+    border-radius: var(--radius);
+
+    position: relative;
+    margin-right: 20px;
+    margin-top: 5px;
+
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+}
+
+header .hamburger::after {   
+    height: var(--height);
+    width: var(--width);
+    
+    border-radius: var(--radius);
+    border: 3px solid var(--white-color);
+    
+    position: absolute;
+    content: '';
+    animation: hamburger_anime 1s ease infinite;
+}
+
+header .hamburger .bar {
+    position: relative;
+    background-color: var(--white-color);
+    z-index: -1;
+
+    height: 2px;
+    width: 30px;
+}
+
+header .hamburger .bar::after,
+header .hamburger .bar::before {
+    content: '';
+    position: absolute;
+
+    height: var(--height);
+    width: var(--width);
+    left: 0;
+
+    background-color: var(--white-color);
+
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+header .hamburger .bar::after {
+    top: 8px;
+}
+
+header .hamburger .bar::before {
+    bottom: 8px;
+}
+
+header .hamburger.active .bar::before {
+    bottom: 0;
+}
+
+header .hamburger.active .bar::after {
+    top: 0;
+}
+
+/*** Hamburger Keyframes! ***/
+@keyframes hamburger_anime {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+/*** End of HAMBURGER Section! ***/
+
+
+
+
+/*** LOGIN Section! ***/
+input[type=text],
+input[type=password] {
+    width: var(--width);
+
+    padding: 12px 20px;
+    margin: 8px 0;
+
+    display: inline-block;
+
+    border: 1px solid var(--gray-color);
+    border-radius: 3px;
+}
+
+::placeholder {
+    color: var(--gray-color);
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/*** Avatar Image! ***/
+img.avatar {
+    width: 100px;
+    height: 100px;
+
+    border: 5px solid var(--main-color);
+    border-radius: var(--radius);
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    padding: 16px;
+}
+
+/*** The Modal (Background)! ***/
+.modal {
+    display: none; /* Hidden by default */
+    z-index: 1;
+    padding-top: 60px;
+    overflow: auto; /* Enable scroll if needed */
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--width);
+    height: var(--height);
+
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*** Modal Content/Box! ***/
+.modal-content {
+    background-color: var(--sec-color);
+    margin: 5px auto;
+    width: 75%;
+}
+
+.login-bottom {
+    font-family: var(--sec-font);
+    color: var(--main-color);
+    font-weight: var(--font-weight);
+}
+
+.login-bottom:hover {
+    color: var(--bs-success);
+}
+
+/*** The Close Button! ***/
+.close {
+    position: absolute;
+    color: var(--black-color);
+
+    right: 25px;
+    top: 0;
+    
+    font-size: 40px;
+    font-weight: var(--font-weight);
+}
+
+.close:hover,
+.close:focus {
+    color: var(--bs-danger);
+    cursor: pointer;
+}
+
+/*** Add Zoom Animation! ***/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/*** Login Keyframes! ***/
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+/*** End of LOGIN Section! ***/
+
+
+
+/*** CAROUSEL Section! ***/
+.carousel-caption {
+    position: absolute;
+    top: 44%;
+
+    transform: translateY(-50%);
+}
+
+.img-slide {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.carousel-btn  {
+    padding: 8px 0;
+    margin-left: -15px;
+
+    width: 150px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+    background-color: transparent;
+    color: var(--white-color);
+
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+
+    font-family: var(--sec-font);
+    font-size: 14px;
+    font-weight: var(--font-weight);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    transform: scale(.8);
+}
+
+.carousel-btn::after {
+    height: var(--height);
+    width: var(--width);
+
+    border-radius: 5px;
+    border: 2px solid var(--white-color);
+
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: 0;
+    content: '';
+    animation: hamburger_anime 1s ease infinite;
+}
+
+.carousel-btn span {
+    width: 0;
+    height: var(--height);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: var(--white-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.carousel-btn:hover span {
+    width: var(--width);
+}
+
+.carousel-btn:hover {
+    color: var(--black-color);
+    font-weight: var(--font-weight);
+}
+/*** End of CAROUSEL Section! ***/
+
+
+
+/*** WAVE image Section! ***/
+.bottom-img {
+    width: var(--width);
+}
+/*** End of WAVE image section! ***/
+
+
+
+/*** SERVICES Section! ***/
+#services {
+    background-color: var(--sec-color);
+
+    width: var(--width);
+    min-height: 100vh;
+
+    position: relative;
+}
+
+
+
+/*** Service CARDS Section! ***/
+.card-box {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-box img {
+    width: 150px;
+    height: 150px;
+
+    text-align: center;
+}
+/*** End of Service CARDS Section! ***/
+
+
+
+/*** CHAT-IMG Animation Section!  ***/
+.chat-img-container {
+    text-align: center;
+    border-radius: 7px;
+    color: var(--white-color);
+    position: relative;
+}
+
+.chat-img-container img {
+    width: var(--width);
+    border-radius: 7px;
+}
+
+.chat-img-overlay {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--main-color));
+    opacity: 0;
+    transition: 1s;
+}
+
+.chat-img-container:hover .chat-img-overlay {
+    opacity: 1;
+}
+
+.chat-img-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.chat-img-hr {
+    background: var(--white-color);
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.chat-img-desc p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.chat-img-container:hover .chat-img-desc {
+    bottom: 20%;
+    opacity: 1;
+}
+/*** End of CHAT-IMG Animation Section!  ***/
+
+
+
+/*** CHATTING Card Section! ***/
+.chat-card {
+    width: 15rem;
+    border: 2px solid var(--sec-color);
+    border-radius: 20px;
+}
+
+.chat-sample {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--white-color);
+    border-radius: 50%;
+}
+
+.chat-text {
+    font-family: var(--sec-font);
+    font-size: 12px;
+}
+/*** End of CHATTING Card Section! ***/
+
+
+
+/*** HIGHLIGHTED Services Section! ***/
+ul.service-list {
+    list-style-type: none;
+}
+
+.service-list li {
+    margin-top: 20px;
+}
+
+.checkmark-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/*** End of HIGHLIGHTED Services Section! ***/
+
+
+
+/*** RADIO BUTTONS Section! ***/
+.form-check {
+    font-family: var(--sec-font);
+    font-weight: 700;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+/*** End of RADIO BUTTONS Section! ***/
+
+
+
+/*** CONSULTATION BACKGROUND Animation! ***/
+#consultation {
+    min-height: 50vh !important;
+}
+
+.bg {
+    animation: bgSlide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, var(--main-color) 50%, #023246 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .9;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+    
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes bgSlide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+/*** End of SERVICE BACKGROUND Animation! ***/
+
+
+
+/*** DOT INDICATOR Buttons! ***/
+.icon-indicators {
+    position: relative;
+    bottom: -25rem !important;
+}
+
+.dot-btn {
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+/*** End of DOT INDICATOR Buttons! ***/
+
+
+/*** SPECIALTIES Class! ***/
+.specialties {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+/*** End of SPECIALTIES Class! ***/
+
+
+
+/*** TABLE Specialties! ***/
+table a {
+    color: var(--white-color) !important;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+}
+
+table a:hover {
+    color: var(--bs-info) !important;
+}
+/*** End of TABLE Specialties! ***/
+
+
+
+/*** ARTICLE SECTION! ***/
+#articles {
+    background-color: var(--sec-color);
+    width: var(--width);
+    min-height: 100vh;
+    position: relative;
+
+
+}
+
+.article-container {
+    /* max-width: 1000px; */
+    margin: auto;
+}
+
+.article-hr {
+    border: 1px solid var(--black-color);
+}
+
+/*** Article LINK CLICK! ***/
+.article-link {
+    color: var(--white-color);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+/*** Article CONTENT GRID! ***/
+.row {
+    margin: 10px -16px !important;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+.column {
+    float: left !important;
+    width: 33.33% !important;
+    display: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*** Article CONTENT! ***/
+.content {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    overflow: hidden;
+}
+
+.content h4 {
+    font-family: var(--sec-font);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.content button {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    outline: none !important;
+
+    font-size: 14px;
+}
+
+.content button:hover {
+    background-color: var(--ter-color);
+    color: var(--white-color);
+}
+
+.show {
+    display: block;
+}
+
+/*** FILTER Buttons! */
+#myBtnContainer button {
+    background-color: var(--ter-color);
+    color: var(--white-color);
+    margin-right: 5px;
+    font-family: var(--sec-font);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#myBtnContainer button.inherit {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+/*** End of ARTICLE SECTION! ***/
+
+
+
+
+#faq {
+    background-color: var(--sec-color);
+    width: var(--width);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion-header {
+    font-family: var(--sec-font);
+}
+
+.accordion-header button {
+    color: var(--black-color) !important;
+}
+
+
+.accordion-text {
+    color: var(--bs-gray);
+}
+
+
+
+
+
+footer {
+    background-color: var(--main-color);
+    overflow: hidden;
+    color: var(--sec-color);
+    font-family: var(--sec-font);
+    
+}
+
+.footer-links {
+    margin-bottom: 0;
+}
+
+.subscribe-title {
+    text-transform: capitalize;
+}
+
+.subscribe-text, .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* showScrollBtn */
+.showScrollBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background: transparent;
+    color: var(--bs-success);
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+
+    border: 3px solid var(--bs-success);
+    border-radius: var(--radius);
+    z-index: 100;
+    transform: scale(.9);
+    transition: all .5s ease;
+}
+
+.showScrollBtn::after {
+    height: var(--height);
+    width: var(--width);
+
+    border-radius: var(--radius);
+    border: 3px solid var(--bs-success);
+
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: 0;
+    content: '';
+    animation: hamburger_anime 1s ease infinite;
+}
+
+
+/*** QUERY MEDIA Section! ***/
+/*** Smaller Screens! ***/
+@media only screen and (max-width: 576px),
+(max-width: 768px),
+(max-width: 992px) {
+    .carousel-caption {
+        margin-top: -4rem !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .img-slide {
+        text-align: center;
+        opacity: 0.1;
+    }
+
+    .carousel-btn {
+        margin-left: -15px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .icon-indicators {
+        display: none;
+    }
+
+    .sub-title {
+        width: 100% !important;
+    }
+
+    .column {
+        width: 100% !important;
+    }
+
+    .footer-link-hr {
+        display: block !important;
+    }
+}
+
+/*** Larger Screens! ***/
+@media only screen and (max-width: 1200px) {
+    .carousel-caption {
+        margin-top: -2rem;
+    }
+
+    .set {
+        margin-top: -3rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 35px;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
+    }
+
+    .img-slide {
+        text-align: center;
+        opacity: 0.1;
+    }
+
+    .carousel-btn {
+        margin-left: -15px;
+    }
+
+    .icon-indicators {
+        display: none;
+    }
+}
+/*** End of QUERY MEDIA Section! ***/
